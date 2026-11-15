@@ -4,7 +4,9 @@ CoffeeRefill 是一个 macOS 菜单栏工具。它可以开启全局禁睡，让
 
 ## 安装与使用
 
-正式版发布后，在项目的 GitHub Releases 下载 `CoffeeRefill-<版本>-macos-arm64.zip`，解压并把 `CoffeeRefill.app` 拖到「应用程序」。本地试用包和签名公证流程见 [发布清单](RELEASING.md)。
+在 [GitHub Releases](https://github.com/lttleraccoon-afk/CoffeeRefill/releases) 的 **Assets** 下载 `CoffeeRefill-1.1-rc-macos-arm64.zip`，解压并把 `CoffeeRefill.app` 拖到「应用程序」。
+
+预览版使用本地临时签名，未经 Apple 公证。首次尝试打开后，如果 macOS 提示无法验证开发者，请先确认 ZIP 来自本仓库的 Release，再按 [Apple 的打开指引](https://support.apple.com/zh-cn/102445)，在「系统设置 › 隐私与安全性」选择「仍要打开」。也可以按下方步骤从源码构建。与 ZIP 一起下载 `.sha256` 文件后，可在下载目录运行 `shasum -a 256 -c CoffeeRefill-1.1-rc-macos-arm64.zip.sha256` 核对下载完整性。
 
 打开 `CoffeeRefill.app`，点击菜单栏月亮图标。开启全局禁睡后图标变为闪电。本次运行第一次切换时，系统弹出管理员授权对话框。之后的切换和「关闭并退出」复用同一会话。应用回读 `SleepDisabled` 后才更新开关。取消授权或执行失败时，重新打开面板可查看提示与当前状态。
 
@@ -30,4 +32,8 @@ xcodebuild -project SleepSwitch.xcodeproj -scheme SleepSwitch \
   -configuration Release -destination 'platform=macOS,arch=arm64' ARCHS=arm64 build
 ```
 
-项目不使用第三方依赖。默认使用本地临时签名，仅供开发和验收。当前实现需要管理员权限，无法按现有功能提交 Mac App Store；两条分发路线见 [发布清单](RELEASING.md)。
+项目不使用第三方依赖，本地构建默认采用临时签名。发布步骤见 [发布清单](RELEASING.md)。
+
+## 许可证
+
+[MIT License](LICENSE)
