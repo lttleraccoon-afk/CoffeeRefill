@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x2="0.85" y2="1">
+      <stop stop-color="#E0F1DC"/>
+      <stop offset="1" stop-color="#A2C9D3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#tile)" d="M506 64h12c166 0 282 0 355 73s87 158 87 369v12c0 211-14 296-87 369s-189 73-355 73h-12c-166 0-282 0-355-73S64 729 64 518v-12c0-211 14-296 87-369s189-73 355-73Z"/>
+
+  <path fill="#FFCD69" stroke="#815624" stroke-width="13" stroke-linejoin="round"
+        d="m308 239-100 91h68l-26 65 100-94h-66Z"/>
+  <path fill="#D9EAF3" stroke="#274F6E" stroke-width="13" stroke-linejoin="round"
+        d="M753 239c-45 0-79 34-79 78s34 78 78 78c27 0 51-15 64-38-10 3-18 4-27 2-34-5-57-39-52-74 2-17 10-32 22-45Z"/>
+  <g fill="#477582">
+    <circle cx="384" cy="323" r="13"/>
+    <circle cx="448" cy="304" r="13"/>
+    <circle cx="512" cy="297" r="13"/>
+    <circle cx="576" cy="304" r="13"/>
+    <circle cx="640" cy="323" r="13"/>
+  </g>
+
+  <rect x="230" y="454" width="564" height="317" rx="28" fill="#193743"/>
+  <path fill="#679696" d="M258 476h212v18a9 9 0 0 0 9 9h66a9 9 0 0 0 9-9v-18h212a8 8 0 0 1 8 8v262H250V484a8 8 0 0 1 8-8Z"/>
+  <path fill="#728D98" d="M164 786h696v11c0 18-15 30-33 30H197c-18 0-33-12-33-30Z"/>
+  <path fill="#E5EEF0" d="M231 751h562l64 34c8 5 3 16-8 16H175c-11 0-16-11-8-16Z"/>
+  <path fill="#728D98" d="M466 791h92a12 12 0 0 1-12 10h-68a12 12 0 0 1-12-10Z"/>
+  <path fill="none" stroke="#274F6E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"
+        d="M834 523c27 31 39 68 31 108m-19-28 19 28 25-23"/>
+</svg>
